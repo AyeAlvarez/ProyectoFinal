@@ -1,3 +1,7 @@
+/* MEDIA */
+@media screen { max-width: 1200px;    
+}
+
 /* LOGO Y TÍTULO DE WEB */
 .header-flex {
     display: flex;
@@ -94,9 +98,11 @@ a {
     font-size:medium;
     text-decoration: none;
     color: black;
+    margin-top: 20px;
 }
 /* TÍTULOS CATÁLOGO */
 .h1c {
+    padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     color: black;
