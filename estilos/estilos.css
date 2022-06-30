@@ -1,0 +1,216 @@
+@media (min-width: 1200px) {}
+@media (min-width: 768px) {}
+@media (min-width: 576px) {}
+
+/* LOGO Y TÍTULO DE WEB */
+.header-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-size:contain;
+}
+.h1 {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+/* BARRA MENÚ */
+.main-flex {
+    display: flex;
+    background-image: url("../img/piso.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+}
+.nav-flex {
+    display: flex;
+    background-position: left;
+    background-size: contain;
+    background-color: orangered;
+    position: sticky;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    text-align: left;
+    
+}
+.ul {
+    list-style: none;
+}
+.li {
+    text-decoration: none;
+    color:black;
+    text-align:left;
+    background-color:white;
+    width: 230px;
+    height: 55px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+a {
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color:burlywood;
+    text-decoration: none;
+    color: orangered;
+  }
+/* GALERÍA FOTOS PRINCIPALES */
+.fotos-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;    
+    margin-left: 60px;
+}
+.article {
+    margin-right: 60px;
+}
+.zoom {
+    transition: transform .2s; 
+}
+    .zoom:hover {
+    transform: scale(1.1); 
+}
+/* PIE DE PÁGINA CON LINKS */
+.footer-flex {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    text-align:center;
+    border-color: orangered;
+    border-style:double;
+    padding: 10px;
+    background-image: url("../img/piso.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+/* NOSOTROS TEXTO */
+.p {
+    background-image: linear-gradient(to bottom, yellow, orangered);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    text-align:justify;
+    border-color: orangered;
+    border-style:double;
+    padding: 10px;
+    margin-top: 30px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    }
+        @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+        }
+
+/* BOTÓN VOLVER */
+.boton {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 15px;
+    background-color:#FFD27D;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+}
+.boton:hover {
+    background-color: burlywood;
+    text-decoration: none;
+    color: black;
+}
+.test, .test:link, .test:visited {
+    text-decoration: none;
+    color: black;
+}
+.test:hover {
+    text-decoration: none;
+    background-color: none;
+}
+    
+/* TÍTULOS CATÁLOGO */
+.h1c {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+    color: black;
+}
+/* GALERÍA */
+.galeria-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px;    
+}
+.imgg {
+    margin: 30px;
+}
+/* FORMULARIOS PRESUPUESTO */
+.form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+    color: black;
+    padding: 30px;
+}
+/* APLICANDO GRIDS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    grid-template-rows: 1fr 3fr 1fr; 
+
+    grid-template-areas: 
+        "header header"
+        "nav section"
+        "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+.grid_nosotros {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 2fr 1fr; 
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+.grid_contacto {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 2fr 1fr; 
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
